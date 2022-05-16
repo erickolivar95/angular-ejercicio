@@ -1,0 +1,22 @@
+
+    <table class="table table-striped">
+        <thead>
+            <tr class="table-primary">
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Sexo</th>
+                <th>Documento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let persona of personas.results">
+                <td>{{ persona.persona.nombre }}</td>
+                <td>{{ persona.persona.edad }}</td>
+                <td>{{ persona.persona.sexo }}</td>
+                <td>{{ persona.persona.documento }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+

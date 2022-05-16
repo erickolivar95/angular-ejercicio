@@ -1,0 +1,24 @@
+<div fxLayout="row" fxLayoutGap="50px" class="margen">
+    <div>
+        <form (ngSubmit)="buscar()">
+            <h1>Nombre:</h1>
+            <input type="text" name="nombre" class="form-control" [(ngModel)]="nombre">
+            <br>
+            <button disabled=true class="anchoBoton" mat-raised-button color="primary" style="background-color: darkcyan">
+                <mat-icon>attachment</mat-icon> <span>Subir documento</span>
+            </button>
+            <br><br>
+            <button class="anchoBoton" type="submit" mat-raised-button style="background-color: blue">
+                Guardar
+            </button>
+        </form>
+    </div>
+    
+
+    <div class="margen" *ngIf="persona.id">
+        <pre>{{ persona | json }}</pre>
+    </div>
+
+
+</div>
+
